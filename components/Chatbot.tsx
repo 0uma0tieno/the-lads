@@ -1,11 +1,13 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { GoogleGenAI } from '@google/genai';
 import type { Chat } from '@google/genai';
 import type { ChatMessage } from '../types';
 import { chatbotSystemInstruction } from '../constants';
 
-// Safely access the API key to prevent a ReferenceError in browser environments
-const API_KEY = (typeof process !== 'undefined' && process.env) ? process.env.API_KEY : undefined;
+// Safely access the API key. Vercel exposes public environment variables 
+// prefixed with REACT_APP_ to the browser.
+const API_KEY = (typeof process !== 'undefined' && process.env) ? process.env.REACT_APP_GEMINI_API_KEY : undefined;
 
 const Chatbot: React.FC<{ onClose: () => void }> = ({ onClose }) => {
     const [chat, setChat] = useState<Chat | null>(null);
@@ -19,7 +21,7 @@ const Chatbot: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         const initChat = () => {
             if (!API_KEY) {
                 setError("API key is missing. Cannot initialize chatbot.");
-                console.error("API_KEY is not set in environment variables.");
+                console.error("REACT_APP_GEMINI_API_KEY is not set in Vercel Environment Variables. Please add it in your Vercel project settings and re-deploy.");
                 return;
             }
             try {
