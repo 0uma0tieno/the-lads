@@ -15,9 +15,11 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
                     {/* Column 1: Brand Info */}
                     <div className="space-y-4">
-                        <Link to="/" className="text-3xl font-bold text-white">
-                            The Lads<span className="text-[#F1AC20]">.</span>
-                        </Link>
+                        <img 
+                            src="/images/GOLDEN YELLOW - HORIZONTAL.png"
+                            alt="The Lads Logo"
+                            className="mr-2 h-16 w-auto"
+    />
                         <p className="text-gray-300 max-w-xs">
                             Fostering the next generation of African tech innovators through hands-on learning and real-world projects.
                         </p>
