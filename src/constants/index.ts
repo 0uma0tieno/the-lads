@@ -129,6 +129,18 @@ export const partnersData: Partner[] = [
       name: 'MUKESA', logoUrl: "/images/MUKESA_LOGO.png",
       linkUrl: "https://0uma0tieno.github.io/mukesa.org/"
     },
+    {
+      name: 'IEEE MMU-K', logoUrl: "/images/MMUK SB LOGO NL.png",
+      linkUrl: undefined
+    },
+    {
+      name: 'MINANI', logoUrl: "/images/MINANI logo.png",
+      linkUrl: undefined
+    },
+    {
+      name: 'Kikuyu Boys', logoUrl: "",
+      linkUrl: "/images/KIMUKA GIRLS.jpg"
+    },
 ];
 
 export const navLinks = [
