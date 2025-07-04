@@ -15,11 +15,13 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
                     {/* Column 1: Brand Info */}
                     <div className="space-y-4">
-                        <img 
-                            src="/images/GOLDEN YELLOW - HORIZONTAL.png"
-                            alt="The Lads Logo"
-                            className="mr-20 h-40 w-auto"
-    />
+                        <Link to="/" className="transition-transform hover:scale-105 block">
+                            <img 
+                                src="/images/GOLDEN YELLOW - HORIZONTAL.png"
+                                alt="The Lads Logo"
+                                className="mr-20 h-40 w-auto"
+                            />
+                        </Link>
                         <p className="text-gray-300 max-w-xs">
                             Fostering the next generation of African tech innovators through hands-on learning and real-world projects.
                         </p>
