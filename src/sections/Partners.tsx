@@ -19,11 +19,11 @@ const Partners: React.FC = () => {
                             className={`transition-all duration-500 ease-out ${isOnScreen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
                             style={{ transitionDelay: `${index * 100}ms` }}
                         >
-                            <img 
-                                src={partner.logoUrl} 
-                                alt={`${partner.name} logo`}
-                                className="h-12 md:h-16 object-contain filter grayscale hover:grayscale-0 transition-all duration-300 cursor-pointer"
-                                title={partner.name}
+                            <img
+                                src={partner.logoUrl}
+                                alt={partner.name}
+                                className="h-20 w-auto object-contain transition-transform hover:scale-105"
+                                style={{ maxHeight: 100 }}
                             />
                         </div>
                     ))}
