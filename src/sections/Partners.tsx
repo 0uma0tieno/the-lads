@@ -19,12 +19,28 @@ const Partners: React.FC = () => {
                             className={`transition-all duration-500 ease-out ${isOnScreen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
                             style={{ transitionDelay: `${index * 100}ms` }}
                         >
-                            <img
-                                src={partner.logoUrl}
-                                alt={partner.name}
-                                className="h-20 w-auto object-contain transition-transform hover:scale-105"
-                                style={{ maxHeight: 100 }}
-                            />
+                            {partner.linkUrl ? (
+                                <a
+                                    href={partner.linkUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    title={partner.name}
+                                >
+                                    <img
+                                        src={partner.logoUrl}
+                                        alt={partner.name}
+                                        className="h-20 w-auto object-contain transition-transform hover:scale-105"
+                                        style={{ maxHeight: 100 }}
+                                    />
+                                </a>
+                            ) : (
+                                <img
+                                    src={partner.logoUrl}
+                                    alt={partner.name}
+                                    className="h-20 w-auto object-contain transition-transform hover:scale-105"
+                                    style={{ maxHeight: 100 }}
+                                />
+                            )}
                         </div>
                     ))}
                 </div>
