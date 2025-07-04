@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                         <img 
                             src="/images/GOLDEN YELLOW - HORIZONTAL.png"
                             alt="The Lads Logo"
-                            className="mr-2 h-16 w-auto"
+                            className="mr-20 h-40 w-auto"
     />
                         <p className="text-gray-300 max-w-xs">
                             Fostering the next generation of African tech innovators through hands-on learning and real-world projects.
