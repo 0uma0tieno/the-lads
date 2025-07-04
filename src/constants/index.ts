@@ -138,8 +138,8 @@ export const partnersData: Partner[] = [
       linkUrl: undefined
     },
     {
-      name: 'Geek Ssters', logoUrl: "",
-      linkUrl: "/images/geek ssters.png"
+      name: 'Geek Ssters', logoUrl: "/images/geek ssters.png",
+      linkUrl: undefined
     },
 ];
 
