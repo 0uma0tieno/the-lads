@@ -138,8 +138,8 @@ export const partnersData: Partner[] = [
       linkUrl: undefined
     },
     {
-      name: 'Kikuyu Boys', logoUrl: "",
-      linkUrl: "/images/KIMUKA GIRLS.jpg"
+      name: 'Geek Ssters', logoUrl: "",
+      linkUrl: "/images/geek ssters.png"
     },
 ];
 
