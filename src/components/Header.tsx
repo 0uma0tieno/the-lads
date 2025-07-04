@@ -33,7 +33,7 @@ const Header: React.FC = () => {
             <header className={`sticky top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled || isMenuOpen ? 'bg-white/95 shadow-md backdrop-blur-sm' : 'bg-transparent'}`}>
                 <div className="container mx-auto px-6 py-4 flex justify-between items-center">
                     <img 
-                        src="public/images/the lads favicon.png"
+                        src="/images/the lads favicon.png"
                         alt="The lads logo"
                         className="mr-2 h-16 w-auto"
                     />
