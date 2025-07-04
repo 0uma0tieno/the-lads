@@ -109,11 +109,26 @@ export const blogData: BlogPost[] = [
 ];
 
 export const partnersData: Partner[] = [
-    { name: 'Dropbox', logoUrl: "/images/DROPBOX.png" },
-    { name: 'Microsoft', logoUrl: `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 25"><g><rect x="1" y="1" width="10.4" height="10.4" fill="%23f25022"/><rect x="13.4" y="1" width="10.4" height="10.4" fill="%237fba00"/><rect x="1" y="13.4" width="10.4" height="10.4" fill="%2300a4ef"/><rect x="13.4" y="13.4" width="10.4" height="10.4" fill="%23ffb900"/></g><path d="M37.8,11.2v10H35.2v-10Zm6.1,0v10H41.3v-10Zm11.8,7.9h-5.4V11.2h5.4v1.8h-3.4v1.7h3.1v1.8h-3.1v3.4Zm5.2-7.9h2.6v10h-2.6v-1.8h-3.3v1.8h-2.6v-10h2.6v1.8h3.3v-1.8Zm13.2,7.9h-5.4V11.2h5.4v1.8h-3.4v1.7h3.1v1.8h-3.1v3.4Zm5.2-7.9h2.6v10h-2.6v-1.8h-3.3v1.8h-2.6v-10h2.6v1.8h3.3v-1.8Z" fill="%23737373"/></svg>` },
-    { name: 'University of Nairobi', logoUrl: 'https://picsum.photos/seed/uon/200/100?grayscale' },
-    { name: 'Strathmore University', logoUrl: 'https://picsum.photos/seed/strathmore/200/100?grayscale' },
-    { name: 'iHub Kenya', logoUrl: 'https://picsum.photos/seed/ihub/200/100?grayscale' },
+    {
+      name: 'Dropbox', logoUrl: "/images/DROPBOX.png",
+      linkUrl: "https://dropboxdraughtsman.vercel.app/"
+    },
+    {
+      name: 'Be The Engineer', logoUrl:"/images/be the engineer.png" ,
+      linkUrl: "https://beetheengineer.com/"
+    },
+    {
+      name: 'MUKOS', logoUrl:"/images/mukos logo new.png" ,
+      linkUrl: "https://mukos.odoo.com/"
+    },
+    {
+      name: 'Friends School Kamusinga', logoUrl: "/images/FriendsSchoolKamusingaLogo.png",
+      linkUrl: undefined
+    },
+    {
+      name: 'MUKESA', logoUrl: "/images/MUKESA_LOGO.png",
+      linkUrl: "https://0uma0tieno.github.io/mukesa.org/"
+    },
 ];
 
 export const navLinks = [

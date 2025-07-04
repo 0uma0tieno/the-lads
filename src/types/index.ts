@@ -44,6 +44,7 @@ export interface BlogPost {
 }
 
 export interface Partner {
+  linkUrl: string | undefined;
   name: string;
   logoUrl: string;
 }
