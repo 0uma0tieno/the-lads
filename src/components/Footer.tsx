@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
                     {/* Column 1: Brand Info */}
                     <div className="space-y-4">
-                        <Link to="/" className="transition-transform hover:scale-105 block">
+                        <Link to="/hero" className="transition-transform hover:scale-105 block">
                             <img 
                                 src="/images/GOLDEN YELLOW - HORIZONTAL.png"
                                 alt="The Lads Logo"
