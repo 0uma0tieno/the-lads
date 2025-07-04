@@ -11,7 +11,7 @@ import { partnersData } from "../constants";
     <img
       src={partner.logoUrl}
       alt={partner.name}
-      className="h-20 w-auto" // Increase h-20 for a larger logo (Tailwind), or use style={{height: '80px'}}
+      className="h-50 w-auto" // Increase h-20 for a larger logo (Tailwind), or use style={{height: '80px'}}
     />
   </a>
 ))}
