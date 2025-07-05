@@ -23,7 +23,7 @@ export interface Event {
   detailedDescription: string;
   location: string;
   imageUrl: string;
-  type: 'Bootcamp' | 'Hackathon' | 'Workshop' | 'Meetup';
+  type: 'Bootcamp' | 'Hackathon' | 'Workshop' | 'Meetup' | 'Outreach' | 'Training' | 'Partnership' | 'Conference' | 'Webinar' | 'Networking' | 'Seminar' | 'Panel Discussion' | 'Community Event';
 }
 
 export interface TeamMember {

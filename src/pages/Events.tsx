@@ -12,6 +12,15 @@ const EventItem: React.FC<{ event: EventType }> = ({ event }) => {
         'Hackathon': 'bg-red-100 text-red-800',
         'Workshop': 'bg-yellow-100 text-yellow-800',
         'Meetup': 'bg-green-100 text-green-800',
+        'Outreach': 'bg-purple-100 text-purple-800',
+        'Training': 'bg-orange-100 text-orange-800',
+        'Partnership': 'bg-teal-100 text-teal-800',
+        'Conference': 'bg-pink-100 text-pink-800',
+        'Webinar': 'bg-indigo-100 text-indigo-800',
+        'Networking': 'bg-gray-100 text-gray-800',
+        'Seminar': 'bg-yellow-200 text-yellow-900',
+        'Panel Discussion': 'bg-purple-200 text-purple-900',
+        'Community Event': 'bg-green-200 text-green-900',
     };
 
     return (

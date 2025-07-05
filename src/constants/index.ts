@@ -66,46 +66,57 @@ export const projectsData: Project[] = [
 ];
 
 export const eventsData: Event[] = [
-    { 
-        id: 'hardware-hackathon-2024',
-        date: 'OCT 22, 2024', 
-        title: 'Hardware Hackathon: Build The Future', 
-        description: 'A 48-hour challenge to create an innovative hardware solution to a real-world problem.', 
-        detailedDescription: 'Join us for an intense 48-hour marathon of creativity, collaboration, and caffeine! Teams will be challenged to design, prototype, and build a hardware project that addresses a key issue in sustainability. We provide the components, tools, and mentorship from industry experts. You bring the ideas and the drive. Prizes will be awarded for innovation, technical execution, and impact.',
-        location: 'iHub, Senteu Plaza, Nairobi',
-        imageUrl: 'https://picsum.photos/seed/hackathon/1200/400',
-        type: 'Hackathon'
-    },
-    { 
-        id: 'intro-to-react-nov-2024',
-        date: 'NOV 15, 2024', 
-        title: 'Intro to React & Tailwind CSS', 
-        description: 'A weekend bootcamp for beginners to learn the fundamentals of modern web development.', 
-        detailedDescription: 'This two-day, hands-on bootcamp is perfect for anyone looking to kickstart their career in web development. We will cover the core concepts of React, including components, state, and props, and then show you how to build beautiful, responsive UIs rapidly with Tailwind CSS. No prior experience is required, just a laptop and a passion for learning.',
-        location: 'Strathmore University Auditorium',
-        imageUrl: 'https://picsum.photos/seed/bootcamp/1200/400',
-        type: 'Bootcamp'
-    },
-    { 
-        id: 'design-thinking-dec-2024',
-        date: 'DEC 05, 2024', 
-        title: 'Design Thinking Workshop', 
-        description: 'Learn how to approach problems like a designer and prototype your ideas effectively.',
-        detailedDescription: 'Unlock your creative potential in this interactive workshop on Design Thinking. You will learn the full five-stage process: Empathize, Define, Ideate, Prototype, and Test. Through a series of fun exercises and a team-based challenge, you will learn how to transform complex problems into elegant, user-centric solutions. This skill is invaluable for any aspiring innovator or entrepreneur.',
-        location: 'University of Nairobi, Main Campus',
-        imageUrl: 'https://picsum.photos/seed/workshop/1200/400',
-        type: 'Workshop'
-    },
-    { 
-        id: 'tech-mingle-jan-2025',
-        date: 'JAN 20, 2025', 
-        title: 'Tech Mingle & Showcase', 
-        description: 'Our quarterly meetup to showcase student projects, network with industry pros, and have fun.',
-        detailedDescription: 'Come and see what The Lads have been building! Our quarterly Tech Mingle is a relaxed evening where students showcase their latest projects to peers, mentors, and industry professionals. It is a fantastic opportunity to get inspired, find collaborators for your next big idea, and network with leading tech companies in Kenya. Plus, there will be pizza!',
-        location: 'The Lads HQ',
-        imageUrl: 'https://picsum.photos/seed/mingle/1200/400',
-        type: 'Meetup'
-    },
+  {
+    id: 'pcb-design-training',
+    date: 'JAN 01, 2025',
+    title: 'PCB Design Training',
+    description: 'An advanced workshop on printed circuit board (PCB) design using KiCad and prototyping tools.',
+    detailedDescription: 'This 6-week workshop equipped participants with skills to design, simulate, and export custom PCBs. Attendees learned schematic design, board layout, and how to prepare Gerber files for manufacturing using KiCad.',
+    location: 'Multimedia University',
+    imageUrl: 'https://picsum.photos/seed/pcbtraining/1200/400',
+    type: 'Training'
+  },  
+  {
+    id: 'stem-outreach-kikuyu',
+    date: 'MAR 10, 2025',
+    title: 'STEM Outreach – Kikuyu Boys',
+    description: 'Empowering high school students through a one-day interactive engineering experience.',
+    detailedDescription: 'In this outreach to Kikuyu Boys High School, our team guided students through practical sessions in electronics and programming, giving them a glimpse of what future careers in STEM could look like.',
+    location: 'Kikuyu Boys High School, Kiambu',
+    imageUrl: 'https://picsum.photos/seed/kikuyu/1200/400',
+    type: 'Outreach'
+  },
+  
+  {
+    id: 'eplan-electrical-training',
+    date: 'MAY 20, 2025',
+    title: 'EPLAN Electrical Design Training',
+    description: 'Hands-on training on industrial electrical design using EPLAN software.',
+    detailedDescription: 'Participants learned how to create professional-grade wiring diagrams and control panel layouts using EPLAN. The training was ideal for those looking to enter industrial automation or electrical system design.',
+    location: 'Virtual Training',
+    imageUrl: 'https://picsum.photos/seed/eplan/1200/400',
+    type: 'Training'
+  },
+  { 
+    id: 'stem outreach Lorngosua',
+    date: 'JUN 15, 2025',
+    title: 'STEM Outreach – Lorngosua',
+    description: 'An outreach event focused on inspiring students in marginalized communities to explore STEM fields.',
+    detailedDescription: 'The Lads team visited Lorngosua in Kajiado County for a full-day STEM outreach. We conducted hands-on sessions in basic electronics, coding, and design thinking, aimed at sparking curiosity and interest in engineering among young learners.',
+    location: 'Lorngosua Primary, Kajiado County',
+    imageUrl: 'https://picsum.photos/seed/lorngosua/1200/400',
+    type: 'Outreach'
+  },
+  {
+    id: 'TRIPARTITE Attachment Program',
+    date: 'JAN 05, 2025',
+    title: 'TRIPARTITE Attachment Program',
+    description: 'Attachment program for MMU and JKUAT students.',
+    detailedDescription: 'In 2025, The Lads secured collaboration with three leading companies to offer structured attachment opportunities. This program provides real-world experience to students from Multimedia University and JKUAT in fields electrical panel design, automation and control.',
+    location: 'Multimedia University of Kenya',
+    imageUrl: 'https://picsum.photos/seed/partnerships/1200/400',
+    type: 'Partnership'
+  }
 ];
 
 export const teamData: TeamMember[] = [
