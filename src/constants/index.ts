@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
     id: 'web-design-lab',
     title: 'Web & Graphic Design Lab',
     category: 'Creative Skills',
-    imageUrl: 'https://picsum.photos/seed/designlab/600/400',
+    imageUrl: '/images/THINTANK BY THE LADS WEBSITE BANNER2.png',
     description: 'Workshops on designing modern websites and visual assets using industry tools.',
     detailedDescription: 'We train students to build clean, responsive websites and create brand materials using tools like Figma, Photoshop, and React. From personal portfolios to startup sites, we help ideas go live on the web.',
     keyFeatures: [
