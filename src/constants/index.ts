@@ -120,19 +120,17 @@ export const eventsData: Event[] = [
 ];
 
 export const teamData: TeamMember[] = [
-  { 
-    name: 'Brian M.', 
+   { 
+    name: 'Ruud O.', 
     role: 'Chairperson', 
-    imageUrl: 'https://picsum.photos/seed/brian/400/400', 
-    funFact: 'Once pitched a startup idea in an elevator — and it worked.', 
-    linkedinUrl: '#', 
-    githubUrl: '#' 
+    imageUrl: '/images/Ruud.jpg', 
+    linkedinUrl: 'https://www.linkedin.com/in/ruudouma/', 
+    githubUrl: 'https://github.com/0uma0tieno' 
   },
   { 
     name: 'Sharon K.', 
     role: 'Lead Coordinator', 
     imageUrl: 'https://picsum.photos/seed/sharon/400/400', 
-    funFact: 'Organizes chaos better than a Python dictionary.', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
@@ -140,7 +138,6 @@ export const teamData: TeamMember[] = [
     name: 'Kevin L.', 
     role: 'Events Coordinator', 
     imageUrl: 'https://picsum.photos/seed/kevin/400/400', 
-    funFact: 'Has a sixth sense for free pizza at tech meetups.', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
@@ -148,7 +145,6 @@ export const teamData: TeamMember[] = [
     name: 'Joy W.', 
     role: 'Industry Liaison', 
     imageUrl: 'https://picsum.photos/seed/joy/400/400', 
-    funFact: 'Once networked her way into a job at a tech expo.', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
@@ -156,7 +152,6 @@ export const teamData: TeamMember[] = [
     name: 'Mike T.', 
     role: 'Managing Director', 
     imageUrl: 'https://picsum.photos/seed/mike/400/400', 
-    funFact: 'Built his first company logo in MS Paint.', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
@@ -164,7 +159,6 @@ export const teamData: TeamMember[] = [
     name: 'Njeri M.', 
     role: 'Treasurer', 
     imageUrl: 'https://picsum.photos/seed/njeri/400/400', 
-    funFact: 'Knows how to budget a bootcamp down to the last resistor.', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
@@ -172,7 +166,6 @@ export const teamData: TeamMember[] = [
     name: 'Titus K.', 
     role: 'Head of Logistics', 
     imageUrl: 'https://picsum.photos/seed/titus/400/400', 
-    funFact: 'Once delivered 100 kits to the wrong venue — and fixed it in 15 minutes.', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
@@ -180,7 +173,6 @@ export const teamData: TeamMember[] = [
     name: 'Faith N.', 
     role: 'Publicity Lead', 
     imageUrl: 'https://picsum.photos/seed/faith/400/400', 
-    funFact: 'Turned a meme into a viral tech campaign.', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
@@ -188,7 +180,6 @@ export const teamData: TeamMember[] = [
     name: 'Steve M.', 
     role: 'Webmaster', 
     imageUrl: 'https://picsum.photos/seed/steve/400/400', 
-    funFact: 'Runs more servers than Netflix (well, almost).', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
@@ -196,7 +187,6 @@ export const teamData: TeamMember[] = [
     name: 'Carol A.', 
     role: 'Secretary', 
     imageUrl: 'https://picsum.photos/seed/carol/400/400', 
-    funFact: 'Can minute a meeting faster than it happens.', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   }
