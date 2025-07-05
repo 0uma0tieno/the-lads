@@ -73,7 +73,7 @@ export const eventsData: Event[] = [
     description: 'An advanced workshop on printed circuit board (PCB) design using KiCad and prototyping tools.',
     detailedDescription: 'This 6-week workshop equipped participants with skills to design, simulate, and export custom PCBs. Attendees learned schematic design, board layout, and how to prepare Gerber files for manufacturing using KiCad.',
     location: 'Multimedia University',
-    imageUrl: 'https://picsum.photos/seed/pcbtraining/1200/400',
+    imageUrl: '/images/WHAT WEVE BEEN UP TO2.png',
     type: 'Training'
   },  
   {
@@ -83,7 +83,7 @@ export const eventsData: Event[] = [
     description: 'Empowering high school students through a one-day interactive engineering experience.',
     detailedDescription: 'In this outreach to Kikuyu Boys High School, our team guided students through practical sessions in electronics and programming, giving them a glimpse of what future careers in STEM could look like.',
     location: 'Kikuyu Boys High School, Kiambu',
-    imageUrl: 'https://picsum.photos/seed/kikuyu/1200/400',
+    imageUrl: '/images/WHAT WEVE BEEN UP TO.png',
     type: 'Outreach'
   },
   
@@ -94,7 +94,7 @@ export const eventsData: Event[] = [
     description: 'Hands-on training on industrial electrical design using EPLAN software.',
     detailedDescription: 'Participants learned how to create professional-grade wiring diagrams and control panel layouts using EPLAN. The training was ideal for those looking to enter industrial automation or electrical system design.',
     location: 'Virtual Training',
-    imageUrl: 'https://picsum.photos/seed/eplan/1200/400',
+    imageUrl: '/images/WHAT WEVE BEEN UP TO3.png',
     type: 'Training'
   },
   { 
@@ -104,7 +104,7 @@ export const eventsData: Event[] = [
     description: 'An outreach event focused on inspiring students in marginalized communities to explore STEM fields.',
     detailedDescription: 'The Lads team visited Lorngosua in Kajiado County for a full-day STEM outreach. We conducted hands-on sessions in basic electronics, coding, and design thinking, aimed at sparking curiosity and interest in engineering among young learners.',
     location: 'Lorngosua Primary, Kajiado County',
-    imageUrl: 'https://picsum.photos/seed/lorngosua/1200/400',
+    imageUrl: '/images/WHAT WEVE BEEN UP TO4.png',
     type: 'Outreach'
   },
   {
@@ -114,7 +114,7 @@ export const eventsData: Event[] = [
     description: 'Attachment program for MMU and JKUAT students.',
     detailedDescription: 'In 2025, The Lads secured collaboration with three leading companies to offer structured attachment opportunities. This program provides real-world experience to students from Multimedia University and JKUAT in fields electrical panel design, automation and control.',
     location: 'Multimedia University of Kenya',
-    imageUrl: 'https://picsum.photos/seed/partnerships/1200/400',
+    imageUrl: '/images/WHAT WEVE BEEN UP TO5.png',
     type: 'Partnership'
   }
 ];
