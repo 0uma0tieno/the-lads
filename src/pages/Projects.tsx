@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
             <div className="container mx-auto px-6 relative z-10">
                 <h2 className="text-4xl font-bold text-center mb-4 text-[#293855]">What We Do</h2>
                 <p className="text-center max-w-3xl mx-auto text-lg text-[#293855]/80 mb-20">
-                    Our students don't just learn theory. They build cool, impactful stuff. Here's a peek.
+                    We run hands-on sessions that teach students how to design and build solutions. Our students don't just learn theory. They build cool, impactful stuff. Here's a peek.
                 </p>
                 <div>
                     {projectsData.map((project, index) => (

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import Hero from '../sections/Hero';
-import About from './About';
 import Projects from './Projects';
 import Events from './Events';
 import Partners from '../sections/Partners';
@@ -14,7 +13,6 @@ const HomePage: React.FC = () => {
     return (
         <>
             <Hero />
-            <About />
             <Projects />
             <Events />
             <Partners />

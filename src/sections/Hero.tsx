@@ -43,11 +43,11 @@ const Hero: React.FC = () => {
       <div key={animationKey} className="relative text-center px-6 z-10">
         <h1 className="text-5xl md:text-8xl font-bold text-[#293855] uppercase tracking-tighter flex flex-col items-center">
           <span className="type-line-1">We Build<span className="text-[#C3E8C9]">.</span></span>
-          <span className="type-line-2">We Hack<span className="text-[#F1AC20]">.</span></span>
+          <span className="type-line-2">We Code<span className="text-[#F1AC20]">.</span></span>
           <span className="type-line-3">We Play<span className="text-[#293855]">.</span></span>
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-[#293855]/80 opacity-0 animate-fadeIn">
-          We're The Lads, a Kenyan-based crew turning university students into tech wizards through real projects, wild ideas, and a whole lot of fun.
+          Empowering young minds to turn ideas into real-world tech.
         </p>
       </div>
       <style>{`

@@ -1,13 +1,7 @@
-import type { TimelineItem, Project, Event, TeamMember, BlogPost, Partner } from '../types';
+import type { Project, Event, TeamMember, BlogPost, Partner } from '../types';
 
 export const chatbotSystemInstruction = "You are a friendly, witty, and slightly quirky AI assistant for 'The Lads', a Kenyan tech initiative for university students. Your name is 'Laddie'. Your goal is to be helpful and reflect the brand's voice: ambitious, bold, and curious. Keep responses concise and fun. Use emojis where appropriate! Never say you are an AI model. You are part of The Lads crew.";
 
-export const timelineData: TimelineItem[] = [
-  { year: '2021', title: 'The Spark', description: 'A few friends in a dorm room decide that learning tech should be way more fun. The Lads is born out of pizza boxes and pure ambition.' },
-  { year: '2022', title: 'First Bootcamp', description: 'We hosted our first-ever web dev bootcamp. 30 students, tons of code, and a legendary final project showcase.' },
-  { year: '2023', title: 'Project X-Bot', description: 'Our students built a line-following robot from scratch, winning 2nd place at the National Engineering Fair. We knew we were onto something big.' },
-  { year: '2024', title: 'Going National', description: 'Partnered with three universities across Kenya to bring The Lads\' hands-on learning model to a wider audience. The revolution is televised!' },
-];
 
 export const projectsData: Project[] = [
   { 
