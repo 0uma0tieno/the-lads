@@ -4,46 +4,66 @@ export const chatbotSystemInstruction = "You are a friendly, witty, and slightly
 
 
 export const projectsData: Project[] = [
-  { 
-    id: 'autonomous-farming-drone',
-    title: 'Autonomous Farming Drone', 
-    category: 'Robotics & AI', 
-    imageUrl: 'https://picsum.photos/seed/drone/600/400', 
-    description: 'A drone designed to monitor crop health using AI-powered image analysis.',
-    detailedDescription: 'This project involved building a quadcopter from scratch and equipping it with a custom gimbal for a multispectral camera. The core challenge was developing a real-time image processing pipeline on a Raspberry Pi using OpenCV and TensorFlow Lite. The drone autonomously navigates pre-defined GPS waypoints, captures images, and uses a trained CNN model to detect signs of nutrient deficiency and pest infestation, providing farmers with actionable data to improve crop yield and reduce waste.',
-    keyFeatures: ['Autonomous GPS Navigation', 'Real-time Image Analysis', 'Multispectral Crop Health Monitoring', 'Lightweight 3D-Printed Frame'],
-    techStack: ['Python', 'TensorFlow', 'OpenCV', 'Raspberry Pi', 'Arduino', '3D Printing']
+   {
+    id: 'engineering-bootcamps',
+    title: 'Engineering Bootcamps',
+    category: 'Technical Training',
+    imageUrl: '/images/the lads first poster.png',
+    description: 'Hands-on training programs for students in electronics, embedded systems, and practical engineering.',
+    detailedDescription: 'Our bootcamps equip students with real-world skills through practical activities like circuit design, Arduino programming, PCB fabrication, and system debugging. Participants walk away with working prototypes and portfolio-ready projects.',
+    keyFeatures: [
+      'Real-World Electronics Projects',
+      'Team-Based Learning',
+      'Fast-Paced, Beginner-Friendly',
+      'Hardware Prototyping Support'
+    ],
+    techStack: ['Arduino', 'KiCad', 'C++', 'Multimeter Tools', 'Breadboards']
   },
-  { 
-    id: 'fintech-app-pesaflow',
-    title: 'Fintech App "PesaFlow"', 
-    category: 'Web & Mobile Dev', 
-    imageUrl: 'https://picsum.photos/seed/fintech/600/400', 
-    description: 'A mobile app for university students to manage budgets and track spending.',
-    detailedDescription: 'PesaFlow was built using React Native for cross-platform compatibility and Firebase for the backend, including Authentication and Firestore database. We integrated the Plaid API to securely connect with users\' bank accounts. A key feature is the custom-built algorithm that automatically categorizes transactions, helping students visualize their spending habits and stick to their budgets.',
-    keyFeatures: ['Cross-Platform (iOS/Android)', 'Secure Bank Integration', 'Automatic Spending Categorization', 'Real-time Notifications'],
-    techStack: ['React Native', 'Firebase', 'Plaid API', 'JavaScript', 'Tailwind CSS']
+  {
+    id: 'web-design-lab',
+    title: 'Web & Graphic Design Lab',
+    category: 'Creative Skills',
+    imageUrl: 'https://picsum.photos/seed/designlab/600/400',
+    description: 'Workshops on designing modern websites and visual assets using industry tools.',
+    detailedDescription: 'We train students to build clean, responsive websites and create brand materials using tools like Figma, Photoshop, and React. From personal portfolios to startup sites, we help ideas go live on the web.',
+    keyFeatures: [
+      'HTML/CSS/JS Foundations',
+      'Live Website Launch Support',
+      'Logo & Poster Design Challenges',
+      'UI/UX Tools Training'
+    ],
+    techStack: ['React', 'Tailwind CSS', 'Figma', 'Photoshop', 'Illustrator']
   },
-  { 
-    id: '3d-printed-prosthetic-hand',
-    title: '3D Printed Prosthetic Hand', 
-    category: 'Hardware & Design', 
-    imageUrl: 'https://picsum.photos/seed/prosthetic/600/400', 
-    description: 'An affordable and customizable prosthetic hand created with 3D printing technology.',
-    detailedDescription: 'Using Fusion 360, our team designed a lightweight, modular prosthetic hand that can be printed on standard FDM 3D printers. It\'s controlled by an Arduino Nano, which interprets signals from EMG sensors placed on the user\'s forearm muscles. This allows for intuitive control of individual finger movements, offering a high degree of functionality at a fraction of the cost of traditional prosthetics.',
-    keyFeatures: ['Myoelectric Control (EMG)', 'Fully 3D-Printable Design', 'Low-Cost & Accessible', 'Modular & Repairable'],
-    techStack: ['Arduino', 'C++', 'Fusion 360', 'EMG Sensors', '3D Printing']
+  {
+    id: 'tech-awareness-events',
+    title: 'Tech Events & Campaigns',
+    category: 'Community Engagement',
+    imageUrl: 'https://picsum.photos/seed/events/600/400',
+    description: 'Interactive events and expos that promote STEM learning, awareness, and collaboration.',
+    detailedDescription: 'From expos and demo days to tech talk sessions and inter-school challenges, our events connect learners to ideas, mentors, and real-world innovations. Each event is designed to inspire and ignite curiosity.',
+    keyFeatures: [
+      'Live Student Demos',
+      'Guest Talks & Panels',
+      'Hackathon-Style Challenges',
+      'Partner & Sponsor Collaboration'
+    ],
+    techStack: ['EventKit', 'Google Slides', 'OBS Studio', 'Discord', 'Canva']
   },
-  { 
-    id: 'weather-prediction-api',
-    title: 'Weather Prediction API', 
-    category: 'Data Science', 
-    imageUrl: 'https://picsum.photos/seed/weather/600/400', 
-    description: 'A machine learning model that provides hyper-local weather forecasts for farmers.',
-    detailedDescription: 'This project utilized historical weather data to train an LSTM (Long Short-Term Memory) model in Python with the Scikit-learn and Keras libraries. The model specializes in time-series forecasting to predict temperature, humidity, and precipitation for specific geographic coordinates. The final model was deployed as a REST API using Flask, allowing for easy integration into farm management applications.',
-    keyFeatures: ['Time-Series Forecasting (LSTM)', 'Hyper-Local Predictions', 'REST API for Easy Integration', 'High Accuracy'],
-    techStack: ['Python', 'Flask', 'Keras', 'Scikit-learn', 'Pandas']
-  },
+  {
+    id: 'mentorship-club',
+    title: 'Mentorship & Innovation Club',
+    category: 'Community Building',
+    imageUrl: 'https://picsum.photos/seed/mentorship/600/400',
+    description: 'A supportive community where students collaborate, innovate, and grow together.',
+    detailedDescription: 'Through our mentorship club, students get support on projects, pitch ideas to peers, and receive guidance from experienced volunteers. We foster a growth culture through shared wins and constant learning.',
+    keyFeatures: [
+      'Weekly Peer Sessions',
+      'Project Feedback Loops',
+      'Access to Mentors',
+      'Innovation Funding Pitches'
+    ],
+    techStack: ['Slack', 'Notion', 'Trello', 'GitHub', 'Miro']
+  }
 ];
 
 export const eventsData: Event[] = [
