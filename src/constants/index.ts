@@ -8,7 +8,7 @@ export const projectsData: Project[] = [
     id: 'engineering-bootcamps',
     title: 'Engineering Bootcamps',
     category: 'Technical Training',
-    imageUrl: '/images/the lads first poster.png',
+    imageUrl: '/images/THINTANK BY THE LADS WEBSITE BANNER.png',
     description: 'Hands-on training programs for students in electronics, embedded systems, and practical engineering.',
     detailedDescription: 'Our bootcamps equip students with real-world skills through practical activities like circuit design, Arduino programming, PCB fabrication, and system debugging. Participants walk away with working prototypes and portfolio-ready projects.',
     keyFeatures: [
