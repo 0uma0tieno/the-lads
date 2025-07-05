@@ -120,10 +120,86 @@ export const eventsData: Event[] = [
 ];
 
 export const teamData: TeamMember[] = [
-  { name: 'Jomo K.', role: 'Chief Troublemaker', imageUrl: 'https://picsum.photos/seed/jomo/400/400', funFact: 'Can assemble a PC blindfolded.', linkedinUrl: '#', githubUrl: '#' },
-  { name: 'Aisha N.', role: 'Head of Code', imageUrl: 'https://picsum.photos/seed/aisha/400/400', funFact: 'Once fixed a bug in her sleep.', linkedinUrl: '#', githubUrl: '#' },
-  { name: 'David O.', role: 'Master of Hardware', imageUrl: 'https://picsum.photos/seed/david/400/400', funFact: 'His soldering iron is his magic wand.', linkedinUrl: '#', githubUrl: '#' },
-  { name: 'Wanja M.', role: 'Design Guru', imageUrl: 'https://picsum.photos/seed/wanja/400/400', funFact: 'Believes everything is a UX problem.', linkedinUrl: '#', githubUrl: '#' },
+  { 
+    name: 'Brian M.', 
+    role: 'Chairperson', 
+    imageUrl: 'https://picsum.photos/seed/brian/400/400', 
+    funFact: 'Once pitched a startup idea in an elevator — and it worked.', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Sharon K.', 
+    role: 'Lead Coordinator', 
+    imageUrl: 'https://picsum.photos/seed/sharon/400/400', 
+    funFact: 'Organizes chaos better than a Python dictionary.', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Kevin L.', 
+    role: 'Events Coordinator', 
+    imageUrl: 'https://picsum.photos/seed/kevin/400/400', 
+    funFact: 'Has a sixth sense for free pizza at tech meetups.', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Joy W.', 
+    role: 'Industry Liaison', 
+    imageUrl: 'https://picsum.photos/seed/joy/400/400', 
+    funFact: 'Once networked her way into a job at a tech expo.', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Mike T.', 
+    role: 'Managing Director', 
+    imageUrl: 'https://picsum.photos/seed/mike/400/400', 
+    funFact: 'Built his first company logo in MS Paint.', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Njeri M.', 
+    role: 'Treasurer', 
+    imageUrl: 'https://picsum.photos/seed/njeri/400/400', 
+    funFact: 'Knows how to budget a bootcamp down to the last resistor.', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Titus K.', 
+    role: 'Head of Logistics', 
+    imageUrl: 'https://picsum.photos/seed/titus/400/400', 
+    funFact: 'Once delivered 100 kits to the wrong venue — and fixed it in 15 minutes.', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Faith N.', 
+    role: 'Publicity Lead', 
+    imageUrl: 'https://picsum.photos/seed/faith/400/400', 
+    funFact: 'Turned a meme into a viral tech campaign.', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Steve M.', 
+    role: 'Webmaster', 
+    imageUrl: 'https://picsum.photos/seed/steve/400/400', 
+    funFact: 'Runs more servers than Netflix (well, almost).', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Carol A.', 
+    role: 'Secretary', 
+    imageUrl: 'https://picsum.photos/seed/carol/400/400', 
+    funFact: 'Can minute a meeting faster than it happens.', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  }
 ];
 
 export const blogData: BlogPost[] = [
