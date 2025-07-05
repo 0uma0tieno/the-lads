@@ -73,7 +73,7 @@ export const eventsData: Event[] = [
     description: 'An advanced workshop on printed circuit board (PCB) design using KiCad and prototyping tools.',
     detailedDescription: 'This 6-week workshop equipped participants with skills to design, simulate, and export custom PCBs. Attendees learned schematic design, board layout, and how to prepare Gerber files for manufacturing using KiCad.',
     location: 'Multimedia University',
-    imageUrl: 'https://photos.google.com/share/AF1QipO1DSXx2YrlSBG7CbDWD_rYtrfLG3cnNHP8iiM3gygISZc-2F4VAgAxZ6INxHcZmg/photo/AF1QipMA1M9iX_bwVjqrGdWBKG-oM7n_fbyi3srJQuL5?key=RnlmSzVoaS12dC1kWi1PTlRlVXlKUEJkLS1Ma0dR',
+    imageUrl: '/images/WHAT WEVE BEEN UP TO2.png',
     type: 'Training'
   },  
   {
