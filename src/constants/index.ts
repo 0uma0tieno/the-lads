@@ -38,7 +38,7 @@ export const projectsData: Project[] = [
     id: 'tech-awareness-events',
     title: 'Tech Events & Campaigns',
     category: 'Community Engagement',
-    imageUrl: 'https://picsum.photos/seed/events/600/400',
+    imageUrl: '/images/THINTANK BY THE LADS WEBSITE BANNER3.png',
     description: 'Interactive events and expos that promote STEM learning, awareness, and collaboration.',
     detailedDescription: 'From expos and demo days to tech talk sessions and inter-school challenges, our events connect learners to ideas, mentors, and real-world innovations. Each event is designed to inspire and ignite curiosity.',
     keyFeatures: [
