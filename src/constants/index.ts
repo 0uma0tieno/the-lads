@@ -50,19 +50,18 @@ export const projectsData: Project[] = [
     techStack: ['EventKit', 'Google Slides', 'OBS Studio', 'Discord', 'Canva']
   },
   {
-    id: 'mentorship-club',
-    title: 'Mentorship & Innovation Club',
-    category: 'Community Building',
-    imageUrl: 'https://picsum.photos/seed/mentorship/600/400',
-    description: 'A supportive community where students collaborate, innovate, and grow together.',
-    detailedDescription: 'Through our mentorship club, students get support on projects, pitch ideas to peers, and receive guidance from experienced volunteers. We foster a growth culture through shared wins and constant learning.',
-    keyFeatures: [
-      'Weekly Peer Sessions',
-      'Project Feedback Loops',
-      'Access to Mentors',
-      'Innovation Funding Pitches'
-    ],
-    techStack: ['Slack', 'Notion', 'Trello', 'GitHub', 'Miro']
+  id: 'mentorship',
+  title: 'Mentorship & STEM Outreaches',
+  category: 'Community Building',
+  imageUrl: '/images/THINTANK BY THE LADS WEBSITE BANNER4.png',
+  description: 'A growing community where students support each other, mentor others, and ignite a passion for STEM across schools.',
+  detailedDescription: 'Our mentorship arm doesn’t just stop at university — we reach out to younger learners too. We’ve mentored students in various high schools, including Naning’oi Girls (Kajiado), Uthiru Girls, and Riara Springs, through STEM outreach programs. In 2024, we organized a successful STEM competition that brought together several private schools to compete in innovation-based challenges — a celebration of creativity and engineering spirit. Within our club, members also receive ongoing guidance on their personal projects, career growth, and pitch their ideas in a peer-driven innovation space.',
+  keyFeatures: [
+    'STEM Outreach in Schools ',
+    'Host Inter-School STEM Competitions',
+    'One-on-One Mentorship & Project Coaching'
+  ],
+  techStack: ['Slack', 'Notion', 'Trello', 'GitHub', 'Miro']
   }
 ];
 
