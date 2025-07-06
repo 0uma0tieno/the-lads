@@ -8,6 +8,7 @@ import ProjectDetail from '../pages/ProjectDetail';
 import EventDetail from '../pages/EventDetail';
 import BlogDetails from '../pages/BlogDetails';
 import SponsorPage from '../pages/SponsorPage';
+import { Analytics } from "@vercel/analytics/react"
 
 
 const App: React.FC = () => {
@@ -39,6 +40,9 @@ const App: React.FC = () => {
         </Routes>
       </main>
       <Footer />
+      <Analytics />
+      {/* This is a placeholder for the Vercel Analytics component */}
+      {/* <VercelAnalytics /> */}
     </div>
   );
 };
