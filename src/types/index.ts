@@ -30,13 +30,13 @@ export interface TeamMember {
   name: string;
   role: string;
   imageUrl: string;
-  funFact: string;
   linkedinUrl?: string;
   githubUrl?: string;
 }
 
 export interface BlogPost {
   title: string;
+  details: string;
   author: string;
   date: string;
   excerpt: string;

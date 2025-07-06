@@ -192,6 +192,7 @@ export const blogData: BlogPost[] = [
     author: 'Ruud O.',
     date: 'Apr 2, 2025',
     excerpt: 'We took engineering to the edge of Kajiado. Here’s what the kids taught us about innovation, creativity — and grit.',
+    details: 'Our recent outreach to Lorngosua Primary School was a humbling experience. We introduced basic electronics and coding to students who had never seen a circuit board before. Their enthusiasm and creativity reminded us why we started this journey in the first place.',
     link: '#'
   },
   {
@@ -199,6 +200,7 @@ export const blogData: BlogPost[] = [
     author: 'Bornface O.',
     date: 'Jun 8, 2025',
     excerpt: 'Before the soldering iron, there’s the blueprint. Our hands-on PCB design session turned sketches into real circuits.',
+    details: 'Our first PCB design training was a success! Participants learned how to take their ideas from paper to prototype using KiCad. We covered everything from schematic capture to board layout, and even exported Gerber files for manufacturing. The excitement of seeing their designs come to life was priceless.',
     link: '#'
   },
   {
@@ -206,6 +208,7 @@ export const blogData: BlogPost[] = [
     author: 'John O.',
     date: 'Jul 1, 2025',
     excerpt: 'Logistics were wild, the kits almost didn’t arrive, and the judging was tense. But what a win for STEM in schools.',
+    details: 'Organizing a STEM competition with no budget was a challenge, but we pulled it off! With support from local schools and volunteers, we created an event that showcased student innovation. Teams competed in challenges ranging from robotics to coding, and the energy was electric. It was a testament to what can be achieved with passion and community support.',
     link: '#'
   },
   {
@@ -213,6 +216,7 @@ export const blogData: BlogPost[] = [
     author: 'MarkRichard W.',
     date: 'July 8, 2025',
     excerpt: 'We partnered with three companies to get MMU and JKUAT students into real engineering environments. Here’s what we learned.',
+    details: 'Our attachment program connects students with industry leaders to gain real-world experience. By partnering with three companies, we provided students from Multimedia University and JKUAT with opportunities to work on live projects in electrical panel design and automation. The feedback has been overwhelmingly positive, with students reporting increased confidence and practical skills.',
     link: '#'
   },
   {
@@ -220,6 +224,7 @@ export const blogData: BlogPost[] = [
     author: 'Emmanuel O.',
     date: 'May 24, 2025',
     excerpt: 'Control panels, wiring diagrams, and real-world simulation. EPLAN turned out to be more than software — it was perspective.',
+    details: 'Our EPLAN training session was a game-changer for students looking to enter the industrial automation field. Participants learned how to create professional-grade wiring diagrams and control panel layouts, gaining skills that are highly sought after in the job market. The hands-on approach made complex concepts accessible and engaging.',
     link: '#'
   }
 ];
