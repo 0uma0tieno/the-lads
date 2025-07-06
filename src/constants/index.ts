@@ -21,7 +21,7 @@ export const projectsData: Project[] = [
   },
   {
     id: 'web-design-lab',
-    title: 'Web & Graphic Design Lab',
+    title: 'Web & Graphic Design',
     category: 'Creative Skills',
     imageUrl: '/images/THINTANK BY THE LADS WEBSITE BANNER2.png',
     description: 'Workshops on designing modern websites and visual assets using industry tools.',
