@@ -1,4 +1,4 @@
-import type { Project, Event, TeamMember, BlogPost, Partner } from '../types';
+import type { Project, Event, TeamMember, BlogPost, Partner, SponsorshipTier } from '../types';
 
 export const chatbotSystemInstruction = "You are a friendly, witty, and slightly quirky AI assistant for 'The Lads', a Kenyan tech initiative for university students. Your name is 'Laddie'. Your goal is to be helpful and reflect the brand's voice: ambitious, bold, and curious. Keep responses concise and fun. Use emojis where appropriate! Never say you are an AI model. You are part of The Lads crew.";
 
@@ -266,6 +266,45 @@ export const partnersData: Partner[] = [
     {
       name: 'Geek Ssters', logoUrl: "/images/geek ssters.png",
       linkUrl: undefined
+    },
+];
+
+export const sponsorshipTiers: SponsorshipTier[] = [
+    {
+        name: 'Community Partner',
+        level: 'Starting from $1,000',
+        description: 'Ideal for companies who want to support the tech community and increase their brand awareness.',
+        benefits: [
+            'Logo placement on our website',
+            'Social media shout-out across all platforms',
+            'Mention in our monthly newsletter',
+            'Tickets to our quarterly Tech Mingle event',
+        ],
+    },
+    {
+        name: 'Innovation Partner',
+        level: 'Starting from $5,000',
+        description: 'A great fit for businesses looking to engage directly with emerging tech talent.',
+        highlight: true,
+        benefits: [
+            'All benefits of Community Partner',
+            'Logo placement on event banners & materials',
+            'Opportunity to send mentors to our bootcamps',
+            'Option to host a branded workshop',
+            'Early access to our student project showcase',
+        ],
+    },
+    {
+        name: 'Visionary Partner',
+        level: 'Contact for details',
+        description: 'For organizations committed to shaping the future of African tech at the highest level.',
+        benefits: [
+            'All benefits of Innovation Partner',
+            'Naming rights for a flagship bootcamp or hackathon',
+            'A keynote slot at a major event',
+            'Direct recruitment pipeline from our top graduates',
+            'Co-branded content (blog posts, case studies)',
+        ],
     },
 ];
 

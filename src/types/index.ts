@@ -54,3 +54,11 @@ export interface ChatMessage {
   sender: 'user' | 'bot';
   text: string;
 }
+
+export interface SponsorshipTier {
+  name: string;
+  level: string;
+  description: string;
+  benefits: string[];
+  highlight?: boolean;
+}

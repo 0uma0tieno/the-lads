@@ -6,7 +6,7 @@ import Events from './Events';
 import Partners from '../sections/Partners';
 import Team from '../sections/Team';
 import Blog from './Blog';
-import Sponsors from './Sponsors';
+import Sponsors from './SponsorPage';
 import Contact from './Contact';
 
 const HomePage: React.FC = () => {

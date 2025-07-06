@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useOnScreen } from '../hooks/useOnScreen';
 
 const BenefitCard: React.FC<{ icon: React.ReactNode; title: string; description: string, delay: number }> = ({ icon, title, description, delay }) => {
@@ -46,12 +47,12 @@ const Sponsors: React.FC = () => {
                 </div>
 
                 <div className="text-center">
-                    <a 
-                        href="#contact"
+                    <Link 
+                        to="/sponsor-us"
                         className="inline-block bg-[#F1AC20] text-white py-4 px-10 rounded-full font-bold text-lg hover:bg-[#293855] transition-all duration-300 transform hover:scale-105"
                     >
                         Become a Sponsor
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

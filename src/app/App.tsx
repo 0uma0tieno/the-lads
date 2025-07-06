@@ -7,6 +7,7 @@ import HomePage from '../pages/HomePage';
 import ProjectDetail from '../pages/ProjectDetail';
 import EventDetail from '../pages/EventDetail';
 import BlogDetails from '../pages/BlogDetails';
+import SponsorPage from '../pages/SponsorPage';
 
 
 const App: React.FC = () => {
@@ -34,6 +35,7 @@ const App: React.FC = () => {
           <Route path="/project/:projectId" element={<ProjectDetail />} />
           <Route path="/event/:eventId" element={<EventDetail />} />
           <Route path="/blog/:id" element={<BlogDetails />} />
+          <Route path="/sponsor-us" element={<SponsorPage />} />
         </Routes>
       </main>
       <Footer />
