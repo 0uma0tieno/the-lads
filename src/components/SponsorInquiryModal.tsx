@@ -22,7 +22,7 @@ const SponsorInquiryModal: React.FC<SponsorInquiryModalProps> = ({ tier, onClose
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         
-        const emailTo = 'sponsorship@thelads.com';
+        const emailTo = 'oumaruud_ke@ieee.org';
         const emailSubject = `Sponsorship Inquiry: ${tier.name} - ${formData.companyName}`;
         const emailBody = `Hello Lads Partnership Team,
 
