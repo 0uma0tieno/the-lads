@@ -188,6 +188,7 @@ export const teamData: TeamMember[] = [
 
 export const blogData: BlogPost[] = [
     {
+    id: 'engineering-bootcamps',
     title: 'What We Learned From Our STEM Outreach to Lorngosua',
     author: 'Ruud O.',
     date: 'Apr 2, 2025',
@@ -196,6 +197,7 @@ export const blogData: BlogPost[] = [
     link: '#'
   },
   {
+    id: 'pcb-design-training',
     title: 'Designing PCBs from Scratch: Lessons from Our First Training',
     author: 'Bornface O.',
     date: 'Jun 8, 2025',
@@ -204,6 +206,7 @@ export const blogData: BlogPost[] = [
     link: '#'
   },
   {
+    id: 'stem-competition',
     title: 'How We Pulled Off a STEM Competition With 5 Schools and No Budget',
     author: 'John O.',
     date: 'Jul 1, 2025',
@@ -212,6 +215,7 @@ export const blogData: BlogPost[] = [
     link: '#'
   },
   {
+    id: 'tripartite-attachment-program',
     title: 'From Class to Industry: Why Our Attachment Program Matters',
     author: 'MarkRichard W.',
     date: 'July 8, 2025',
@@ -220,6 +224,7 @@ export const blogData: BlogPost[] = [
     link: '#'
   },
   {
+    id: 'eplan-training',
     title: 'EPLAN Training: Bridging the Gap Between Lab Work and Industry',
     author: 'Emmanuel O.',
     date: 'May 24, 2025',
