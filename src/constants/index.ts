@@ -145,28 +145,35 @@ export const teamData: TeamMember[] = [
     name: 'MarkRichard W.', 
     role: 'Industry Liaison', 
     imageUrl: '/images/mark.png', 
-    linkedinUrl: '#', 
-    githubUrl: '#' 
+    linkedinUrl: 'https://www.linkedin.com/in/markrichard-wahogo-smiek-7b813522a/', 
+    githubUrl: 'https://github.com/Mark-Wahogo' 
   },
   { 
     name: 'Trevor M.', 
     role: 'Publicity Lead', 
     imageUrl: '/images/trevor.jpg', 
-    linkedinUrl: '#', 
+    linkedinUrl: 'https://www.linkedin.com/in/trevor-momanyi-254-ke/', 
     githubUrl: '#' 
   },
   { 
     name: 'John O.', 
     role: 'Head of Logistics', 
-    imageUrl: 'https://picsum.photos/seed/titus/400/400', 
-    linkedinUrl: '#', 
-    githubUrl: '#' 
+    imageUrl: '/images/Olweny.png', 
+    linkedinUrl: 'https://www.linkedin.com/in/john-olweny-855537256/?originalSubdomain=ke', 
+    githubUrl: 'https://github.com/gopeanalytics' 
+  },
+   { 
+    name: 'Eugene G.', 
+    role: 'Secretary', 
+    imageUrl: '/images/gusmao.png', 
+    linkedinUrl: 'https://github.com/book-engineer', 
+    githubUrl: 'https://github.com/book-engineer' 
   },
   { 
     name: 'Spencer S.', 
     role: 'Managing Director', 
-    imageUrl: 'https://picsum.photos/seed/mike/400/400', 
-    linkedinUrl: '#', 
+    imageUrl: '/images/Spencer.jpeg', 
+    linkedinUrl: 'https://www.linkedin.com/in/spencer-sakwa-021392290/', 
     githubUrl: '#' 
   },
   { 
@@ -180,7 +187,7 @@ export const teamData: TeamMember[] = [
     name: 'Derrick T.', 
     role: 'Webmaster', 
     imageUrl: '/images/derrick.jpg', 
-    linkedinUrl: '#', 
+    linkedinUrl: 'https://www.linkedin.com/in/derrick-tarus-02b261307/', 
     githubUrl: '#' 
   },
   
