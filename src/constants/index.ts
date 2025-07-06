@@ -128,68 +128,62 @@ export const teamData: TeamMember[] = [
     githubUrl: 'https://github.com/0uma0tieno' 
   },
   { 
-    name: 'Sharon K.', 
+    name: 'Bornface O.', 
     role: 'Lead Coordinator', 
-    imageUrl: 'https://picsum.photos/seed/sharon/400/400', 
-    linkedinUrl: '#', 
+    imageUrl: '/images/bonny.jpg', 
+    linkedinUrl: 'https://www.linkedin.com/in/bornface-o-oduor-4478161bb/?originalSubdomain=ke', 
     githubUrl: '#' 
   },
   { 
-    name: 'Kevin L.', 
+    name: 'Emmanuel O.', 
     role: 'Events Coordinator', 
-    imageUrl: 'https://picsum.photos/seed/kevin/400/400', 
+    imageUrl: '/images/Manuh.jpg', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
   { 
-    name: 'Joy W.', 
+    name: 'MarkRichard W.', 
     role: 'Industry Liaison', 
-    imageUrl: 'https://picsum.photos/seed/joy/400/400', 
+    imageUrl: '/images/mark.png', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
   { 
-    name: 'Mike T.', 
-    role: 'Managing Director', 
-    imageUrl: 'https://picsum.photos/seed/mike/400/400', 
+    name: 'Trevor M.', 
+    role: 'Publicity Lead', 
+    imageUrl: '/images/trevor.jpg', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
   { 
-    name: 'Njeri M.', 
-    role: 'Treasurer', 
-    imageUrl: 'https://picsum.photos/seed/njeri/400/400', 
-    linkedinUrl: '#', 
-    githubUrl: '#' 
-  },
-  { 
-    name: 'Titus K.', 
+    name: 'John O.', 
     role: 'Head of Logistics', 
     imageUrl: 'https://picsum.photos/seed/titus/400/400', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
   { 
-    name: 'Faith N.', 
-    role: 'Publicity Lead', 
-    imageUrl: 'https://picsum.photos/seed/faith/400/400', 
+    name: 'Spencer S.', 
+    role: 'Managing Director', 
+    imageUrl: 'https://picsum.photos/seed/mike/400/400', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
   { 
-    name: 'Steve M.', 
+    name: 'Leon A.', 
+    role: 'Treasurer', 
+    imageUrl: 'https://picsum.photos/seed/njeri/400/400', 
+    linkedinUrl: '#', 
+    githubUrl: '#' 
+  },
+  { 
+    name: 'Derrick T.', 
     role: 'Webmaster', 
-    imageUrl: 'https://picsum.photos/seed/steve/400/400', 
+    imageUrl: '/images/derrick.jpg', 
     linkedinUrl: '#', 
     githubUrl: '#' 
   },
-  { 
-    name: 'Carol A.', 
-    role: 'Secretary', 
-    imageUrl: 'https://picsum.photos/seed/carol/400/400', 
-    linkedinUrl: '#', 
-    githubUrl: '#' 
-  }
+  
 ];
 
 export const blogData: BlogPost[] = [
