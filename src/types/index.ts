@@ -35,6 +35,7 @@ export interface TeamMember {
 }
 
 export interface BlogPost {
+  id: string;
   title: string;
   details: string;
   author: string;
