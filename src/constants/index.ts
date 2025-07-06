@@ -194,13 +194,29 @@ export const teamData: TeamMember[] = [
 ];
 
 export const blogData: BlogPost[] = [
-    {
+  {
     id: 'engineering-bootcamps',
     title: 'What We Learned From Our STEM Outreach to Lorngosua',
     author: 'Ruud O.',
     date: 'Apr 2, 2025',
     excerpt: 'We took engineering to the edge of Kajiado. Here’s what the kids taught us about innovation, creativity — and grit.',
-    details: 'Our recent outreach to Lorngosua Primary School was a humbling experience. We introduced basic electronics and coding to students who had never seen a circuit board before. Their enthusiasm and creativity reminded us why we started this journey in the first place.',
+    details: `
+In April 2024, a team from The Lads journeyed deep into Kajiado County to reach Lorngosua, a remote area with limited access to technology and almost no exposure to STEM education. This outreach wasn’t just about showing off cool gadgets or fancy presentations. It was about bridging a digital divide and sparking imagination where opportunity had been scarce.
+
+We spent the day with students aged 9 to 16, running hands-on sessions covering the basics of electricity, robotics, and simple coding using microcontrollers like Arduino. We were blown away by how quickly the learners adapted, especially when given the chance to build something tangible. One of the highlights was watching a group of students wire up an LED traffic light simulation — their excitement lit up the room.
+
+But perhaps the most powerful moment was when one girl asked, “Can I really build machines that work?” That one question made every mile of travel worth it.
+
+Key takeaways from the Lorngosua outreach:
+
+- Accessibility is everything. Without power, we had to adapt by using solar-charged power banks and offline resources.
+- STEM curiosity is universal, it just needs the right spark.
+- Exposure transforms mindset. After our session, several students expressed interest in becoming engineers and inventors.
+
+This visit wasn’t the end, it was the beginning. We’re now exploring how to keep supporting Lorngosua through follow-up material, online mentorship, and by collaborating with initiatives like IEEE’s Connecting the Unconnected.
+
+STEM is not a privilege, it’s a right. And we’re on a mission to deliver it, one school at a time.
+    `,
     link: '#'
   },
   {
@@ -209,7 +225,28 @@ export const blogData: BlogPost[] = [
     author: 'Bornface O.',
     date: 'Jun 8, 2025',
     excerpt: 'Before the soldering iron, there’s the blueprint. Our hands-on PCB design session turned sketches into real circuits.',
-    details: 'Our first PCB design training was a success! Participants learned how to take their ideas from paper to prototype using KiCad. We covered everything from schematic capture to board layout, and even exported Gerber files for manufacturing. The excitement of seeing their designs come to life was priceless.',
+    details: `
+As part of our mission to make engineering practical, The Lads organized a PCB design training session that turned theory into real hardware. The goal? Teach students how to go from idea → schematic → printed circuit board, using KiCad and hands-on techniques.
+
+The training started with basic electronic design principles — component symbols, schematic capture, and understanding datasheets. Then, we introduced KiCad, guiding participants step-by-step on how to:
+
+1. Draw their circuits
+2. Create netlists and footprints
+3. Route traces and design boards
+4. Generate Gerber files for manufacturing
+
+The session became a turning point for many students. For the first time, they realized the bridge between classroom circuit diagrams and physical boards they could build or even commercialize.
+
+What made this training unique:
+
+- We emphasized open-source tools like KiCad to eliminate cost barriers.
+- Students worked in groups to simulate real-world collaboration.
+- Mentors from the PCB industry joined in for Q&A and portfolio advice.
+
+We ended the day with a "PCB Showcase," where every group explained their design logic, trade-offs, and improvements for future iterations. From battery-powered phone chargers to logic puzzles, the creativity was next-level.
+
+PCB design is no longer a niche skill. It’s a gateway to embedded systems, robotics, and hardware entrepreneurship.
+    `,
     link: '#'
   },
   {
@@ -218,16 +255,59 @@ export const blogData: BlogPost[] = [
     author: 'John O.',
     date: 'Jul 1, 2025',
     excerpt: 'Logistics were wild, the kits almost didn’t arrive, and the judging was tense. But what a win for STEM in schools.',
-    details: 'Organizing a STEM competition with no budget was a challenge, but we pulled it off! With support from local schools and volunteers, we created an event that showcased student innovation. Teams competed in challenges ranging from robotics to coding, and the energy was electric. It was a testament to what can be achieved with passion and community support.',
+    details: `
+They said it couldn’t be done. But we did it. The Lads organized and executed a full-blown interschool STEM competition — with zero external funding, just pure hustle and collaboration.
+
+Held in Nairobi, the event brought together five private schools to compete in challenges ranging from robot line-following and logic design to engineering quizzes and product pitching.
+
+With limited resources, we improvised:
+- We borrowed kits from friends and university labs.
+- Volunteers printed rulebooks and certificates using personal printers.
+- Judges were drawn from alumni, industry mentors, and university professors.
+
+Each school formed a team of 5, and we judged them on:
+- Creativity and originality
+- Functionality and execution
+- Teamwork and presentation
+
+The energy was electric. Students stayed long after the awards ceremony to network, share tools, and exchange contacts. Some teams even asked to start joint projects afterward.
+
+Our big wins:
+
+- The top teams received internship referrals from our partners.
+- The event opened the door for future STEM fairs — this time with sponsors already interested.
+- One of the guest schools reached out asking us to run workshops for their staff.
+
+Innovation thrives under constraint — and this competition proved it.
+    `,
     link: '#'
   },
   {
     id: 'tripartite-attachment-program',
     title: 'From Class to Industry: Why Our Attachment Program Matters',
     author: 'MarkRichard W.',
-    date: 'July 8, 2025',
+    date: 'Jul 8, 2025',
     excerpt: 'We partnered with three companies to get MMU and JKUAT students into real engineering environments. Here’s what we learned.',
-    details: 'Our attachment program connects students with industry leaders to gain real-world experience. By partnering with three companies, we provided students from Multimedia University and JKUAT with opportunities to work on live projects in electrical panel design and automation. The feedback has been overwhelmingly positive, with students reporting increased confidence and practical skills.',
+    details: `
+In a world where job markets demand experience before opportunity, internships and attachments are often the missing link for engineering students. That’s why The Lads made it a priority to do more than teach — we now connect.
+
+Over the past 3 months, we’ve partnered with three engineering firms to provide structured industrial attachments to students from MMU and JKUAT.
+
+These aren’t just casual placements. They’re built around learning paths, real-world challenges, and technical reporting. Students join engineering teams, shadow professionals, and contribute to live projects.
+
+How we did it:
+- We surveyed over 60 students on their skill gaps and goals.
+- We designed a proposal showing companies the value of mentoring fresh talent.
+- We helped students build digital CVs, GitHub profiles, and portfolios.
+- We created a shortlisting and recommendation system for both sides.
+
+Why this matters:
+- Students gain portfolio-ready experiences to complement their academics.
+- Companies get access to energetic, trainable, junior talent.
+- It sets a standard for how student-industry collaboration should look.
+
+We're now working to grow this model into an official "Lads Attachment Track" — complete with onboarding, progress tracking, and post-placement mentorship.
+    `,
     link: '#'
   },
   {
@@ -236,10 +316,30 @@ export const blogData: BlogPost[] = [
     author: 'Emmanuel O.',
     date: 'May 24, 2025',
     excerpt: 'Control panels, wiring diagrams, and real-world simulation. EPLAN turned out to be more than software — it was perspective.',
-    details: 'Our EPLAN training session was a game-changer for students looking to enter the industrial automation field. Participants learned how to create professional-grade wiring diagrams and control panel layouts, gaining skills that are highly sought after in the job market. The hands-on approach made complex concepts accessible and engaging.',
+    details: `
+EPLAN is not your average student software — it's an industry-grade electrical design tool used in professional automation, control panel design, and smart factory planning. And yet, we decided to demystify it and bring it to university students in a way that made it both accessible and exciting.
+
+Our EPLAN Training Workshop started with a big question: What happens after you've built a circuit on a breadboard? We introduced the idea of real-world industrial schematics — the kind used in factories, substations, and control systems.
+
+What we covered:
+- How to create and manage complex electrical diagrams
+- Understanding how EPLAN automates cross-referencing and terminal management
+- Wiring cabinet layouts and generating bills of materials (BOM)
+- Simulating error-free control logic design before deployment
+
+Students from MMU, JKUAT, and TUK joined in, and many of them had never seen professional-grade software in action. By the end of the day, they were designing 3-phase motor starters, full panel schematics, and organizing outputs with ease.
+
+Impact:
+- 85% of attendees had never used EPLAN before — but now include it in their CVs.
+- One student received a job interview offer days after showcasing their EPLAN project on LinkedIn.
+- We are now partnering with mentors from the automation industry to guide students on EPLAN certification and real projects.
+
+With tools like EPLAN, students no longer just dream about industry — they simulate it, wire it, and design it.
+    `,
     link: '#'
   }
 ];
+
 
 export const partnersData: Partner[] = [
     {
