@@ -187,9 +187,41 @@ export const teamData: TeamMember[] = [
 ];
 
 export const blogData: BlogPost[] = [
-    { title: '5 Reasons Your Side Project Is Your Best CV', author: 'Aisha N.', date: 'Sep 15, 2024', excerpt: 'Forget grades for a second. We dive into why that "silly" app you built is actually your golden ticket to a great tech career...', link: '#' },
-    { title: 'The Art of the Fail: What Our Robotics Team Learned', author: 'David O.', date: 'Aug 28, 2024', excerpt: 'Our robot went up in smoke (literally). Here’s the story of our biggest failure and why it was our greatest lesson...', link: '#' },
-    { title: 'Is University Teaching The Right Tech Skills?', author: 'Jomo K.', date: 'Aug 10, 2024', excerpt: 'A provocative look at the gap between academic knowledge and real-world engineering demands. What needs to change?...', link: '#' },
+    {
+    title: 'What We Learned From Our STEM Outreach to Lorngosua',
+    author: 'Ruud O.',
+    date: 'Apr 2, 2025',
+    excerpt: 'We took engineering to the edge of Kajiado. Here’s what the kids taught us about innovation, creativity — and grit.',
+    link: '#'
+  },
+  {
+    title: 'Designing PCBs from Scratch: Lessons from Our First Training',
+    author: 'Bornface O.',
+    date: 'Jun 8, 2025',
+    excerpt: 'Before the soldering iron, there’s the blueprint. Our hands-on PCB design session turned sketches into real circuits.',
+    link: '#'
+  },
+  {
+    title: 'How We Pulled Off a STEM Competition With 5 Schools and No Budget',
+    author: 'John O.',
+    date: 'Jul 1, 2025',
+    excerpt: 'Logistics were wild, the kits almost didn’t arrive, and the judging was tense. But what a win for STEM in schools.',
+    link: '#'
+  },
+  {
+    title: 'From Class to Industry: Why Our Attachment Program Matters',
+    author: 'MarkRichard W.',
+    date: 'July 8, 2025',
+    excerpt: 'We partnered with three companies to get MMU and JKUAT students into real engineering environments. Here’s what we learned.',
+    link: '#'
+  },
+  {
+    title: 'EPLAN Training: Bridging the Gap Between Lab Work and Industry',
+    author: 'Emmanuel O.',
+    date: 'May 24, 2025',
+    excerpt: 'Control panels, wiring diagrams, and real-world simulation. EPLAN turned out to be more than software — it was perspective.',
+    link: '#'
+  }
 ];
 
 export const partnersData: Partner[] = [
