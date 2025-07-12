@@ -27,6 +27,7 @@ export interface Event {
 }
 
 export interface TeamMember {
+  funFact: string;
   name: string;
   role: string;
   imageUrl: string;
@@ -61,4 +62,94 @@ export interface SponsorshipTier {
   description: string;
   benefits: string[];
   highlight?: boolean;
+}
+
+export interface ContentData {
+  getInTouch: any;
+  siteMetadata: {
+    title: string;
+    brandName: string;
+    brandNameWithPeriod: string;
+  };
+  
+  chatbotSystemInstruction: string;
+  hero: {
+    line1: string;
+    line2: string;
+    line3: string;
+    subtitle: string;
+  };
+  about: {
+    title: string;
+    subtitle: string;
+  };
+  timelineData: TimelineItem[];
+  projects: {
+    title: string;
+    subtitle: string;
+  };
+  projectsData: Project[];
+  events: {
+    title: string;
+    subtitle: string;
+  };
+  eventsData: Event[];
+  partners: {
+    title: string;
+    subtitle: string;
+  };
+  partnersData: Partner[];
+  team: {
+    title: string;
+    subtitle: string;
+  };
+  teamData: TeamMember[];
+  blog: {
+    title: string;
+    subtitle: string;
+  };
+  blogData: BlogPost[];
+  sponsors: {
+    title: string;
+    subtitle: string;
+    buttonText: string;
+    benefits: {
+      title: string;
+      description: string;
+    }[];
+  };
+  contact: {
+    title: string;
+    subtitle: string;
+    form: {
+      namePlaceholder: string;
+      emailPlaceholder: string;
+      interests: string[];
+      messagePlaceholder: string;
+      submitButtonText: string;
+    };
+  };
+  registrationModal: {
+    title: string;
+    form: {
+      nameLabel: string;
+      emailLabel: string;
+      universityLabel: string;
+      submitButtonText: string;
+      loadingText: string;
+    };
+    success: {
+      title: string;
+      message: string;
+      closeButtonText: string;
+    };
+    error: string;
+  };
+  footer: {
+    description: string;
+    navigateTitle: string;
+    connectTitle: string;
+    contactLinkText: string;
+    copyrightText: string;
+  };
 }
