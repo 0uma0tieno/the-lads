@@ -8,7 +8,8 @@ import ProjectDetail from '../pages/ProjectDetail';
 import EventDetail from '../pages/EventDetail';
 import BlogDetails from '../pages/BlogDetails';
 import SponsorPage from '../pages/SponsorPage';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import AdminPage from '../pages/Admin';
 
 
 const App: React.FC = () => {
@@ -25,6 +26,14 @@ const App: React.FC = () => {
       }
     }
   }, [location.pathname, location.hash]);
+
+  if (location.pathname === '/admin') {
+    return (
+       <Routes>
+          <Route path="/admin" element={<AdminPage />} />
+        </Routes>
+    )
+  }
 
   return (
     <div className="bg-white min-h-screen flex flex-col">
