@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 // Import the useContent hook to access the global content data.
 import { useContent } from '../components/ContentContext';
 // Import all necessary types for the content data structure.
-import type { ContentData, TeamMember, Project } from '../types/index';
+import type { ContentData, TeamMember, Project } from '../types';
 
 // Helper component to create a collapsible section for better organization of the admin page.
 const AdminSection: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
