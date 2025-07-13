@@ -1,7 +1,50 @@
-import type { Project, Event, TeamMember, BlogPost, Partner, SponsorshipTier } from '../types';
+import type { Project, Event, TeamMember, BlogPost, Partner, SponsorshipTier, TimelineItem } from '../types';
 
 export const chatbotSystemInstruction = "You are a friendly, witty, and slightly quirky AI assistant for 'The Lads', a Kenyan tech initiative for university students. Your name is 'Laddie'. Your goal is to be helpful and reflect the brand's voice: ambitious, bold, and curious. Keep responses concise and fun. Use emojis where appropriate! Never say you are an AI model. You are part of The Lads crew.";
 
+export const timelineData: TimelineItem[] = [
+    {
+        year: '2020',
+        events: [
+            {
+                title: 'The Lads is Founded',
+                description: 'A group of passionate engineering students at Multimedia University of Kenya come together to form The Lads, aiming to make a difference in the tech community.',
+                imageUrl: '/images/founding.jpg',
+            },
+        ],
+    },
+    {
+        year: '2021',
+        events: [
+            {
+                title: 'First Bootcamp',
+                description: 'The Lads hosts its first engineering bootcamp, introducing students to practical electronics and embedded systems.',
+                imageUrl: '/images/bootcamp.jpg',
+            },
+            {
+                title: 'Community Outreach',
+                description: 'The Lads begins outreach programs to local high schools, inspiring the next generation of engineers.',
+                imageUrl: '/images/outreach.jpg',
+            },
+        ],
+    },
+    {
+        year: '2022',
+        events: [
+            {
+                title: 'Partnerships Established',
+                description: 'The Lads partners with local tech companies and universities to expand its reach and resources.',
+                imageUrl: '/images/partnerships.jpg',
+            },
+            {
+                title: 'First Tech Expo',
+                description: 'The Lads organizes its first tech expo, showcasing student projects and innovations to the public.',
+                imageUrl: '/images/expo.jpg',
+            },
+        ],
+    },
+
+]
 
 export const projectsData: Project[] = [
    {
@@ -120,75 +163,85 @@ export const eventsData: Event[] = [
 ];
 
 export const teamData: TeamMember[] = [
-   { 
-    name: 'Ruud O.', 
-    role: 'Chairperson', 
-    imageUrl: '/images/Ruud.jpg', 
-    linkedinUrl: 'https://www.linkedin.com/in/ruudouma/', 
-    githubUrl: 'https://github.com/0uma0tieno' 
+   {
+     name: 'Ruud O.',
+     role: 'Chairperson',
+     imageUrl: '/images/Ruud.jpg',
+     linkedinUrl: 'https://www.linkedin.com/in/ruudouma/',
+     githubUrl: 'https://github.com/0uma0tieno',
+     funFact: ''
+   },
+  {
+    name: 'Bornface O.',
+    role: 'Lead Coordinator',
+    imageUrl: '/images/bonny.jpg',
+    linkedinUrl: 'https://www.linkedin.com/in/bornface-o-oduor-4478161bb/?originalSubdomain=ke',
+    githubUrl: '#',
+    funFact: ''
   },
-  { 
-    name: 'Bornface O.', 
-    role: 'Lead Coordinator', 
-    imageUrl: '/images/bonny.jpg', 
-    linkedinUrl: 'https://www.linkedin.com/in/bornface-o-oduor-4478161bb/?originalSubdomain=ke', 
-    githubUrl: '#' 
+  {
+    name: 'Emmanuel O.',
+    role: 'Events Coordinator',
+    imageUrl: '/images/Manuh.jpg',
+    linkedinUrl: '#',
+    githubUrl: '#',
+    funFact: ''
   },
-  { 
-    name: 'Emmanuel O.', 
-    role: 'Events Coordinator', 
-    imageUrl: '/images/Manuh.jpg', 
-    linkedinUrl: '#', 
-    githubUrl: '#' 
+  {
+    name: 'MarkRichard W.',
+    role: 'Industry Liaison',
+    imageUrl: '/images/mark.png',
+    linkedinUrl: 'https://www.linkedin.com/in/markrichard-wahogo-smiek-7b813522a/',
+    githubUrl: 'https://github.com/Mark-Wahogo',
+    funFact: ''
   },
-  { 
-    name: 'MarkRichard W.', 
-    role: 'Industry Liaison', 
-    imageUrl: '/images/mark.png', 
-    linkedinUrl: 'https://www.linkedin.com/in/markrichard-wahogo-smiek-7b813522a/', 
-    githubUrl: 'https://github.com/Mark-Wahogo' 
+  {
+    name: 'Trevor M.',
+    role: 'Publicity Lead',
+    imageUrl: '/images/trevor.jpg',
+    linkedinUrl: 'https://www.linkedin.com/in/trevor-momanyi-254-ke/',
+    githubUrl: '#',
+    funFact: ''
   },
-  { 
-    name: 'Trevor M.', 
-    role: 'Publicity Lead', 
-    imageUrl: '/images/trevor.jpg', 
-    linkedinUrl: 'https://www.linkedin.com/in/trevor-momanyi-254-ke/', 
-    githubUrl: '#' 
+  {
+    name: 'John O.',
+    role: 'Head of Logistics',
+    imageUrl: '/images/Olweny.png',
+    linkedinUrl: 'https://www.linkedin.com/in/john-olweny-855537256/?originalSubdomain=ke',
+    githubUrl: 'https://github.com/gopeanalytics',
+    funFact: ''
   },
-  { 
-    name: 'John O.', 
-    role: 'Head of Logistics', 
-    imageUrl: '/images/Olweny.png', 
-    linkedinUrl: 'https://www.linkedin.com/in/john-olweny-855537256/?originalSubdomain=ke', 
-    githubUrl: 'https://github.com/gopeanalytics' 
+   {
+     name: 'Eugene G.',
+     role: 'Secretary',
+     imageUrl: '/images/gusmao.png',
+     linkedinUrl: 'https://github.com/book-engineer',
+     githubUrl: 'https://github.com/book-engineer',
+     funFact: ''
+   },
+  {
+    name: 'Spencer S.',
+    role: 'Managing Director',
+    imageUrl: '/images/Spencer.jpeg',
+    linkedinUrl: 'https://www.linkedin.com/in/spencer-sakwa-021392290/',
+    githubUrl: '#',
+    funFact: ''
   },
-   { 
-    name: 'Eugene G.', 
-    role: 'Secretary', 
-    imageUrl: '/images/gusmao.png', 
-    linkedinUrl: 'https://github.com/book-engineer', 
-    githubUrl: 'https://github.com/book-engineer' 
+  {
+    name: 'Leon A.',
+    role: 'Treasurer',
+    imageUrl: 'https://picsum.photos/seed/njeri/400/400',
+    linkedinUrl: '#',
+    githubUrl: '#',
+    funFact: ''
   },
-  { 
-    name: 'Spencer S.', 
-    role: 'Managing Director', 
-    imageUrl: '/images/Spencer.jpeg', 
-    linkedinUrl: 'https://www.linkedin.com/in/spencer-sakwa-021392290/', 
-    githubUrl: '#' 
-  },
-  { 
-    name: 'Leon A.', 
-    role: 'Treasurer', 
-    imageUrl: 'https://picsum.photos/seed/njeri/400/400', 
-    linkedinUrl: '#', 
-    githubUrl: '#' 
-  },
-  { 
-    name: 'Derrick T.', 
-    role: 'Webmaster', 
-    imageUrl: '/images/derrick.jpg', 
-    linkedinUrl: 'https://www.linkedin.com/in/derrick-tarus-02b261307/', 
-    githubUrl: '#' 
+  {
+    name: 'Derrick T.',
+    role: 'Webmaster',
+    imageUrl: '/images/derrick.jpg',
+    linkedinUrl: 'https://www.linkedin.com/in/derrick-tarus-02b261307/',
+    githubUrl: '#',
+    funFact: ''
   },
   
 ];

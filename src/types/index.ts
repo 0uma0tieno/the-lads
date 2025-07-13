@@ -1,8 +1,13 @@
 export interface TimelineItem {
   year: string;
-  title: string;
-  description: string;
+  events: {
+    title: string;
+    description: string;
+    imageUrl?: string;
+  }[];
 }
+  
+
 
 export interface Project {
   id: string;

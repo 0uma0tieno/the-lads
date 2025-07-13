@@ -6,7 +6,7 @@ import {
     teamData as defaultTeam,
     blogData as defaultBlog,
     partnersData as defaultPartners,
-} from '../constants';
+} from '../constants/index';
 import type { Project, TeamMember, Event, TimelineItem, BlogPost, Partner } from '../types';
 
 // This file creates a central store for all the editable content on the website.
