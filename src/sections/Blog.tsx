@@ -1,10 +1,12 @@
 import React from 'react';
-import { blogData } from '../constants';
 import { useOnScreen } from '../hooks/useOnScreen';
 import { Link } from 'react-router-dom';
+import { useContent } from '../context/ContentContext';
 
 const Blog: React.FC = () => {
     const [ref, isOnScreen] = useOnScreen<HTMLDivElement>({ threshold: 0.1 });
+    const { content } = useContent();
+    const { blogData } = content;
 
     return (
         <section id="blog" className="py-20 bg-white">

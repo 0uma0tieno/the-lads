@@ -3,9 +3,12 @@ import { Link } from 'react-router-dom';
 import type { Event as EventType } from '../types';
 import { eventsData } from '../constants';
 import { useOnScreen } from '../hooks/useOnScreen';
+import { useContent } from '../context/ContentContext';
+
 
 const EventItem: React.FC<{ event: EventType }> = ({ event }) => {
     const [ref, isOnScreen] = useOnScreen<HTMLDivElement>({ threshold: 0.2 });
+    useContent();
 
     const typeColorMap = {
         'Bootcamp': 'bg-blue-100 text-blue-800',

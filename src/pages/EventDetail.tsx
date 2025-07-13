@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { eventsData } from '../constants';
 import DecorativeBlob from '../components/DecorativeBlob';
 import RegistrationModal from '../components/RegistrationModal';
+import { useContent } from '../context/ContentContext';
+
+
 
 const EventDetail: React.FC = () => {
   const { eventId } = useParams<{ eventId: string }>();
-  const event = eventsData.find((e) => e.id === eventId);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { content } = useContent();
+  const { eventsData } = content;
+  const event = eventsData.find((e) => e.id === eventId);
+  
 
   if (!event) {
     return (

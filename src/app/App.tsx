@@ -6,10 +6,11 @@ import ScrollToTop from './ScrollToTop';
 import HomePage from '../pages/HomePage';
 import ProjectDetail from '../pages/ProjectDetail';
 import EventDetail from '../pages/EventDetail';
-import BlogDetails from '../pages/BlogDetails';
-import SponsorPage from '../pages/SponsorPage';
-import { Analytics } from "@vercel/analytics/react";
-import AdminPage from '../pages/Admin';
+import { AdminProvider } from '../context/AdminContext';
+import { ContentProvider } from '../context/ContentContext';
+import PrivateRoute from '../components/PrivateRoute';
+import AdminLoginPage from '../pages/Admin/LoginPage';
+import AdminDashboard from '../pages/Admin/Dashboard';
 
 
 const App: React.FC = () => {
@@ -27,32 +28,37 @@ const App: React.FC = () => {
     }
   }, [location.pathname, location.hash]);
 
-  if (location.pathname === '/admin') {
-    return (
-       <Routes>
-          <Route path="/admin" element={<AdminPage />} />
-        </Routes>
-    )
-  }
-
   return (
-    <div className="bg-white min-h-screen flex flex-col">
-      <Header />
-      <ScrollToTop />
-      <main className="flex-grow">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/project/:projectId" element={<ProjectDetail />} />
-          <Route path="/event/:eventId" element={<EventDetail />} />
-          <Route path="/blog/:id" element={<BlogDetails />} />
-          <Route path="/sponsor-us" element={<SponsorPage />} />
-        </Routes>
-      </main>
-      <Footer />
-      <Analytics />
-      {/* This is a placeholder for the Vercel Analytics component */}
-      {/* <VercelAnalytics /> */}
-    </div>
+    // ADDED: Wrap the application in the new context providers
+    // This makes admin status and site content available throughout the app.
+    <AdminProvider>
+      <ContentProvider>
+        <div className="bg-white min-h-screen flex flex-col">
+          <Header />
+          <ScrollToTop />
+          <main className="flex-grow">
+            <Routes>
+              {/* Existing public routes */}
+              <Route path="/" element={<HomePage />} />
+              <Route path="/project/:projectId" element={<ProjectDetail />} />
+              <Route path="/event/:eventId" element={<EventDetail />} />
+
+              {/* ADDED: Routes for the admin section */}
+              <Route path="/login" element={<AdminLoginPage />} />
+              <Route 
+                path="/admin" 
+                element={
+                  <PrivateRoute>
+                    <AdminDashboard />
+                  </PrivateRoute>
+                } 
+              />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </ContentProvider>
+    </AdminProvider>
   );
 };
 

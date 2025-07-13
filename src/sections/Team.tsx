@@ -1,7 +1,7 @@
 import React from 'react';
 import type { TeamMember as TeamMemberType } from '../types';
-import { teamData } from '../constants';
 import { useOnScreen } from '../hooks/useOnScreen';
+import { useContent } from '../context/ContentContext';
 
 const TeamCard: React.FC<{ member: TeamMemberType, index: number }> = ({ member, index }) => {
     const [ref, isOnScreen] = useOnScreen<HTMLDivElement>({ threshold: 0.1 });
@@ -56,6 +56,8 @@ const TeamCard: React.FC<{ member: TeamMemberType, index: number }> = ({ member,
 };
 
 const Team: React.FC = () => {
+    const { content } = useContent();
+    const { teamData } = content;
     return (
         <section id="team" className="py-20 bg-gray-50 overflow-hidden">
             <div className="container mx-auto px-6">

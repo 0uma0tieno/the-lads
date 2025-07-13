@@ -1,11 +1,16 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { projectsData } from '../constants';
 import DecorativeBlob from '../components/DecorativeBlob';
+import { useContent } from '../context/ContentContext';
+
 
 const ProjectDetail: React.FC = () => {
   const { projectId } = useParams<{ projectId: string }>();
+  const { content } = useContent();
+  const { projectsData } = content;
   const project = projectsData.find((p) => p.id === projectId);
+ 
+
 
   if (!project) {
     return (

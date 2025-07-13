@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { navLinks } from '../constants';
+import { useAdmin } from '../context/AdminContext';
 
 const Header: React.FC = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { isAdmin, logout } = useAdmin();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -39,6 +41,16 @@ const Header: React.FC = () => {
                             className="mr-2 h-16 w-auto"
                         />
                     </Link>
+
+                    {isAdmin && (
+                            <Link 
+                                to="/admin" 
+                                className="font-medium transition-colors duration-300 text-blue-600 hover:text-[#F1AC20]"
+                            >
+                                Admin
+                            </Link>
+                        )}
+
                     <nav className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
                             <Link 
@@ -79,10 +91,22 @@ const Header: React.FC = () => {
                             {link.name}
                         </Link>
                     ))}
+
+                    {isAdmin && (
+                        <Link to="/admin" onClick={closeMenu} className="text-3xl font-bold transition-colors duration-300 text-blue-600 hover:text-[#F1AC20]">
+                            Admin
+                        </Link>
+                    )}
+                    {isAdmin ? (
+                        <button onClick={() => { logout(); closeMenu(); }} className="mt-8 bg-red-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#293855] transition-all duration-300 transform hover:scale-105">
+                            Logout
+                        </button>
+                    ) : (
                      <Link to="/#contact" onClick={closeMenu} className="mt-8 bg-[#F1AC20] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#293855] transition-all duration-300 transform hover:scale-105">
                         Get In Touch
                     </Link>
-                </nav>
+                    
+                    )}</nav>
             </div>
         </>
     );

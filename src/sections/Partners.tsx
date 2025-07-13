@@ -1,9 +1,11 @@
 import React from 'react';
-import { partnersData } from '../constants';
 import { useOnScreen } from '../hooks/useOnScreen';
+import { useContent } from '../context/ContentContext';
 
 const Partners: React.FC = () => {
     const [ref, isOnScreen] = useOnScreen<HTMLDivElement>({ threshold: 0.1 });
+    const { content } = useContent();
+    const { partnersData } = content;
 
     return (
         <section id="partners" className="py-20 bg-white">

@@ -4,10 +4,13 @@ import type { Project as ProjectType } from '../types';
 import { projectsData } from '../constants';
 import { useOnScreen } from '../hooks/useOnScreen';
 import DecorativeBlob from '../components/DecorativeBlob';
+import { useContent } from '../context/ContentContext';
+
 
 const ProjectItem: React.FC<{ project: ProjectType, index: number }> = ({ project, index }) => {
     const [ref, isOnScreen] = useOnScreen<HTMLDivElement>({ threshold: 0.2 });
     const isEven = index % 2 === 0;
+    useContent();
 
     return (
         <div ref={ref} className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mb-20 md:mb-24">
