@@ -1,4 +1,9 @@
 export interface TimelineItem {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl?: string;
+  date: string; // ISO date format
   year: string;
   events: {
     title: string;

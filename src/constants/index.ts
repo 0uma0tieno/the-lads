@@ -4,44 +4,56 @@ export const chatbotSystemInstruction = "You are a friendly, witty, and slightly
 
 export const timelineData: TimelineItem[] = [
     {
-        year: '2020',
-        events: [
-            {
-                title: 'The Lads is Founded',
-                description: 'A group of passionate engineering students at Multimedia University of Kenya come together to form The Lads, aiming to make a difference in the tech community.',
-                imageUrl: '/images/founding.jpg',
-            },
-        ],
+      year: '2020',
+      events: [
+        {
+          title: 'The Lads is Founded',
+          description: 'A group of passionate engineering students at Multimedia University of Kenya come together to form The Lads, aiming to make a difference in the tech community.',
+          imageUrl: '/images/founding.jpg',
+        },
+      ],
+      id: '',
+      title: '',
+      description: '',
+      date: ''
     },
     {
-        year: '2021',
-        events: [
-            {
-                title: 'First Bootcamp',
-                description: 'The Lads hosts its first engineering bootcamp, introducing students to practical electronics and embedded systems.',
-                imageUrl: '/images/bootcamp.jpg',
-            },
-            {
-                title: 'Community Outreach',
-                description: 'The Lads begins outreach programs to local high schools, inspiring the next generation of engineers.',
-                imageUrl: '/images/outreach.jpg',
-            },
-        ],
+      year: '2021',
+      events: [
+        {
+          title: 'First Bootcamp',
+          description: 'The Lads hosts its first engineering bootcamp, introducing students to practical electronics and embedded systems.',
+          imageUrl: '/images/bootcamp.jpg',
+        },
+        {
+          title: 'Community Outreach',
+          description: 'The Lads begins outreach programs to local high schools, inspiring the next generation of engineers.',
+          imageUrl: '/images/outreach.jpg',
+        },
+      ],
+      id: '',
+      title: '',
+      description: '',
+      date: ''
     },
     {
-        year: '2022',
-        events: [
-            {
-                title: 'Partnerships Established',
-                description: 'The Lads partners with local tech companies and universities to expand its reach and resources.',
-                imageUrl: '/images/partnerships.jpg',
-            },
-            {
-                title: 'First Tech Expo',
-                description: 'The Lads organizes its first tech expo, showcasing student projects and innovations to the public.',
-                imageUrl: '/images/expo.jpg',
-            },
-        ],
+      year: '2022',
+      events: [
+        {
+          title: 'Partnerships Established',
+          description: 'The Lads partners with local tech companies and universities to expand its reach and resources.',
+          imageUrl: '/images/partnerships.jpg',
+        },
+        {
+          title: 'First Tech Expo',
+          description: 'The Lads organizes its first tech expo, showcasing student projects and innovations to the public.',
+          imageUrl: '/images/expo.jpg',
+        },
+      ],
+      id: '',
+      title: '',
+      description: '',
+      date: ''
     },
 
 ]
