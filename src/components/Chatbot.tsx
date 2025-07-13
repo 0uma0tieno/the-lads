@@ -1,14 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { GoogleGenAI } from '@google/genai';
-import type { Chat } from '@google/genai';
 import type { ChatMessage } from '../types';
-import { chatbotSystemInstruction } from '../constants';
 
-// Safely access the API key to prevent a ReferenceError in browser environments
-const API_KEY = (typeof process !== 'undefined' && process.env) ? process.env.API_KEY : undefined;
+// REMOVED: Direct SDK imports and API_KEY usage from the frontend.
+// The chatbot logic is now handled by a secure backend function.
 
 const Chatbot: React.FC<{ onClose: () => void }> = ({ onClose }) => {
-    const [chat, setChat] = useState<Chat | null>(null);
+    // State remains mostly the same, but we no longer manage the 'chat' instance here.
     const [messages, setMessages] = useState<ChatMessage[]>([]);
     const [userInput, setUserInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
@@ -16,26 +13,8 @@ const Chatbot: React.FC<{ onClose: () => void }> = ({ onClose }) => {
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        const initChat = () => {
-            if (!API_KEY) {
-                setError("API key is missing. Cannot initialize chatbot.");
-                console.error("API_KEY is not set in environment variables.");
-                return;
-            }
-            try {
-                const ai = new GoogleGenAI({ apiKey: API_KEY });
-                const newChat = ai.chats.create({
-                    model: 'gemini-2.5-flash-preview-04-17',
-                    config: { systemInstruction: chatbotSystemInstruction }
-                });
-                setChat(newChat);
-                setMessages([{ sender: 'bot', text: "Hey there! I'm Laddie, the bot for The Lads. Got any questions about our bootcamps, projects, or why we love tech? Ask away! 🚀" }]);
-            } catch (e: any) {
-                setError("Failed to initialize the chatbot.");
-                console.error(e);
-            }
-        };
-        initChat();
+        // Initial bot message when the component loads.
+        setMessages([{ sender: 'bot', text: "Hey there! I'm Laddie, the bot for The Lads. Got any questions about our bootcamps, projects, or why we love tech? Ask away! 🚀" }]);
     }, []);
     
     useEffect(() => {
@@ -45,24 +24,44 @@ const Chatbot: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 
     const handleSendMessage = async (e: React.FormEvent) => {
         e.preventDefault();
-        if (!userInput.trim() || !chat || isLoading) return;
+        if (!userInput.trim() || isLoading) return;
 
         const userMessage: ChatMessage = { sender: 'user', text: userInput };
-        setMessages(prev => [...prev, userMessage]);
+        // We now pass the entire message history to the backend API.
+        const currentMessages = [...messages, userMessage];
+        setMessages(currentMessages);
         setUserInput('');
         setIsLoading(true);
         setError(null);
         
         try {
-            const responseStream = await chat.sendMessageStream({ message: userMessage.text });
+            // UPDATED: Call our new secure serverless function instead of the Gemini SDK.
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                // Send the new user message and the prior history for context.
+                body: JSON.stringify({ message: userInput, history: messages }),
+            });
+
+            if (!response.ok || !response.body) {
+                throw new Error('Failed to get a response from the server.');
+            }
+            
+            // Handle the streaming response from the backend.
+            const reader = response.body.getReader();
+            const decoder = new TextDecoder();
             let botResponse = '';
             
             // Add a placeholder for the bot's message
             setMessages(prev => [...prev, { sender: 'bot', text: '' }]);
 
-            for await (const chunk of responseStream) {
-                botResponse += chunk.text;
-                // Update the last message (the bot's response) in the array
+            while (true) {
+                const { value, done } = await reader.read();
+                if (done) break;
+
+                botResponse += decoder.decode(value, { stream: true });
                 setMessages(prev => {
                     const newMessages = [...prev];
                     newMessages[newMessages.length - 1].text = botResponse;
@@ -70,9 +69,9 @@ const Chatbot: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                 });
             }
 
-        } catch (e) {
+        } catch (e: any) {
             console.error("Error sending message:", e);
-            const errorMessage = "Oops! Something went wrong on my end. Maybe try asking that again in a different way?";
+            const errorMessage = e.message || "Oops! Something went wrong on my end. Maybe try asking that again?";
             setError(errorMessage);
             setMessages(prev => [...prev, { sender: 'bot', text: errorMessage }]);
         } finally {
@@ -121,10 +120,10 @@ const Chatbot: React.FC<{ onClose: () => void }> = ({ onClose }) => {
                         onChange={(e) => setUserInput(e.target.value)}
                         placeholder={isLoading ? "Please wait..." : "Ask something..."}
                         className="flex-1 w-full p-3 bg-gray-100 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#F1AC20] placeholder:text-gray-500"
-                        disabled={isLoading || !chat || !!error}
+                        disabled={isLoading}
                         aria-label="Chat input"
                     />
-                    <button type="submit" className="bg-[#293855] text-white p-3 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#F1AC20] transition-colors" disabled={isLoading || !chat || !userInput.trim()} aria-label="Send message">
+                    <button type="submit" className="bg-[#293855] text-white p-3 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#F1AC20] transition-colors" disabled={isLoading || !userInput.trim()} aria-label="Send message">
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                     </button>
                 </form>

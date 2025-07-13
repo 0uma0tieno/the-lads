@@ -11,30 +11,41 @@ const AdminLoginPage: React.FC = () => {
     
     const navigate = useNavigate();
     const location = useLocation();
+    // The login function from context now just sets the state, it doesn't check the password.
     const { login } = useAdmin();
 
-    // The destination to redirect to after successful login.
-    // Defaults to /admin, but can be another page if the user was redirected here.
     const from = location.state?.from?.pathname || '/admin';
 
-    const handleSubmit = (e: FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         setError('');
         setIsLoading(true);
 
-        // Simulate a network delay for better UX
-        setTimeout(() => {
-            const loginSuccess = login(password);
-            
-            if (loginSuccess) {
-                // On successful login, navigate to the intended destination.
+        try {
+            // UPDATED: Call the new secure /api/login endpoint.
+            const response = await fetch('/api/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ password }),
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.success) {
+                // If the backend confirms the password is correct, call the context's
+                // login function to update the app's state.
+                login();
                 navigate(from, { replace: true });
             } else {
-                // On failure, show an error message.
-                setError('Incorrect password. Please try again.');
-                setIsLoading(false);
+                // Otherwise, use the error message from the backend.
+                setError(data.message || 'Incorrect password. Please try again.');
             }
-        }, 500);
+        } catch (err) {
+            setError('Failed to connect to the server. Please try again later.');
+            console.error(err);
+        } finally {
+            setIsLoading(false);
+        }
     };
 
     return (
