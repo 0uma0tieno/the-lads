@@ -6,11 +6,14 @@ import ScrollToTop from './ScrollToTop';
 import HomePage from '../pages/HomePage';
 import ProjectDetail from '../pages/ProjectDetail';
 import EventDetail from '../pages/EventDetail';
+import SponsorshipPage from '../pages/SponsorPage';
+import BlogDetails from '../pages/BlogDetails';
 import { AdminProvider } from '../context/AdminContext';
 import { ContentProvider } from '../context/ContentContext';
 import PrivateRoute from '../components/PrivateRoute';
 import AdminLoginPage from '../pages/Admin/LoginPage';
 import AdminDashboard from '../pages/Admin/Dashboard';
+
 
 
 const App: React.FC = () => {
@@ -42,6 +45,11 @@ const App: React.FC = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/project/:projectId" element={<ProjectDetail />} />
               <Route path="/event/:eventId" element={<EventDetail />} />
+              <Route path="/sponsor" element={<SponsorshipPage />} />
+              <Route path="/blog/:blogId" element={<BlogDetails />} />
+              
+              {/* ADDED: Catch-all route for 404 Not Found */}
+              <Route path="*" element={<div>Page Not Found</div>} />
 
               {/* ADDED: Routes for the admin section */}
               <Route path="/login" element={<AdminLoginPage />} />
